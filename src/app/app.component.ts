@@ -69,6 +69,11 @@ export class AppComponent {
     height: 100,
     background: 'red',
   };
+  registro = {
+    name: '',
+    email: '',
+    password: '',
+  };
 
   toggleButton() {
     this.btnDisable = !this.btnDisable;
@@ -95,5 +100,9 @@ export class AppComponent {
 
   eliminarNombre(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log('Se a resgistrado: ', this.registro);
   }
 }
