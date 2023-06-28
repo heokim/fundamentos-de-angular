@@ -63,6 +63,7 @@ export class AppComponent {
       image: './assets/images/p7.jpg',
     },
   ];
+  widthImg = 10;
 
   toggleButton() {
     this.btnDisable = !this.btnDisable;
